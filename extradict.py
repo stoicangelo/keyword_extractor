@@ -14,3 +14,9 @@ keywords = rake_object.run(text)
 
 # 3. print results
 print("Keywords:", keywords)
+
+outit= open("result.txt", 'w')
+
+for item in keywords:
+	outit.write("%s\n" % str(item))
+
